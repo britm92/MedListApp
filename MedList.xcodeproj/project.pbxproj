@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		54ED0B901DEFA8A6004E83CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0B8F1DEFA8A6004E83CC /* AppDelegate.swift */; };
-		54ED0B921DEFA8A6004E83CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0B911DEFA8A6004E83CC /* ViewController.swift */; };
 		54ED0B951DEFA8A6004E83CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ED0B931DEFA8A6004E83CC /* Main.storyboard */; };
 		54ED0B971DEFA8A6004E83CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54ED0B961DEFA8A6004E83CC /* Assets.xcassets */; };
 		54ED0B9A1DEFA8A6004E83CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ED0B981DEFA8A6004E83CC /* LaunchScreen.storyboard */; };
+		54ED0BA21DEFABE5004E83CC /* MedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0BA11DEFABE5004E83CC /* MedTableViewController.swift */; };
+		54ED0BA41DF4AE63004E83CC /* MedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0BA31DF4AE63004E83CC /* MedTableViewCell.swift */; };
+		54ED0BA61DF6E84F004E83CC /* MedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0BA51DF6E84F004E83CC /* MedDetailViewController.swift */; };
+		54ED0BA81DFA4583004E83CC /* Med.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0BA71DFA4583004E83CC /* Med.swift */; };
+		54ED0BAC1DFA60B2004E83CC /* remindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED0BAB1DFA60B2004E83CC /* remindViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54ED0B8C1DEFA8A6004E83CC /* MedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54ED0B8F1DEFA8A6004E83CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54ED0B911DEFA8A6004E83CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54ED0B941DEFA8A6004E83CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54ED0B961DEFA8A6004E83CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54ED0B991DEFA8A6004E83CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54ED0B9B1DEFA8A6004E83CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54ED0BA11DEFABE5004E83CC /* MedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedTableViewController.swift; sourceTree = "<group>"; };
+		54ED0BA31DF4AE63004E83CC /* MedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedTableViewCell.swift; sourceTree = "<group>"; };
+		54ED0BA51DF6E84F004E83CC /* MedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedDetailViewController.swift; sourceTree = "<group>"; };
+		54ED0BA71DFA4583004E83CC /* Med.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Med.swift; sourceTree = "<group>"; };
+		54ED0BAB1DFA60B2004E83CC /* remindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = remindViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				54ED0B8F1DEFA8A6004E83CC /* AppDelegate.swift */,
-				54ED0B911DEFA8A6004E83CC /* ViewController.swift */,
 				54ED0B931DEFA8A6004E83CC /* Main.storyboard */,
+				54ED0BA51DF6E84F004E83CC /* MedDetailViewController.swift */,
 				54ED0B961DEFA8A6004E83CC /* Assets.xcassets */,
 				54ED0B981DEFA8A6004E83CC /* LaunchScreen.storyboard */,
 				54ED0B9B1DEFA8A6004E83CC /* Info.plist */,
+				54ED0BA11DEFABE5004E83CC /* MedTableViewController.swift */,
+				54ED0BA31DF4AE63004E83CC /* MedTableViewCell.swift */,
+				54ED0BA71DFA4583004E83CC /* Med.swift */,
+				54ED0BAB1DFA60B2004E83CC /* remindViewController.swift */,
 			);
 			path = MedList;
 			sourceTree = "<group>";
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54ED0B921DEFA8A6004E83CC /* ViewController.swift in Sources */,
+				54ED0BA81DFA4583004E83CC /* Med.swift in Sources */,
+				54ED0BA61DF6E84F004E83CC /* MedDetailViewController.swift in Sources */,
+				54ED0BA41DF4AE63004E83CC /* MedTableViewCell.swift in Sources */,
+				54ED0BA21DEFABE5004E83CC /* MedTableViewController.swift in Sources */,
 				54ED0B901DEFA8A6004E83CC /* AppDelegate.swift in Sources */,
+				54ED0BAC1DFA60B2004E83CC /* remindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

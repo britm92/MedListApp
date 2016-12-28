@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import EventKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var eventStore: EKEventStore?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+         UINavigationBar.appearance().tintColor = UIColor(red: 211.0/255.0, green: 84.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+         UINavigationBar.appearance().barTintColor = UIColor(red: 129.0/255.0, green: 207.0/255.0, blue: 224.0/255.0, alpha: 1.0)
+        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 24.0){
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 211.0/255.0, green: 84.0/255.0, blue: 0.0/255.0, alpha: 1.0), NSFontAttributeName:barFont]
+            UIApplication.shared.statusBarStyle = .lightContent
+        }
         // Override point for customization after application launch.
         return true
     }
